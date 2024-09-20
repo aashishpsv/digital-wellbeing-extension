@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Time Limiter</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    label { display: block; margin-top: 10px; }
+    button { margin-top: 10px; }
+    #status { margin-top: 10px; }
+    #timerList { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Set Website Limit</h1>
+  <div id="currentWebsite"></div>
+  <form id="limitForm">
+    <label for="timeLimit">Time Limit (minutes):</label>
+    <input type="number" id="timeLimit" name="timeLimit" min="1"><br><br>
+    <button type="submit">Set Limit</button>
+  </form>
+  <div id="status"></div>
+  <button id="clearTimersButton">Clear Current Timers</button>
+  <h2>Current Limits</h2>
+  <ul id="timerList"></ul>
+  <h2>Time Spent</h2>
+  <ul id="timeSpentList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
